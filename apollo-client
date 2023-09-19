@@ -1,0 +1,8 @@
+// Import necessary dependencies
+import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
+
+// Create an Apollo Client instance
+const client = new ApolloClient({
+    uri: "https://api.dreamprovider.in/api/properties", // Replace with your GraphQL endpoint
+    cache: new InMemoryCache(),
+});
